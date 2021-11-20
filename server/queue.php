@@ -61,7 +61,7 @@
         <p class="lead">
             <form action="upload.php" method="post" enctype="multipart/form-data">
             <input type="file" name="fileToUpload" id="fileToUpload">
-            <input  type="submit" value="Upload Image" name="submit">
+            <input  type="submit" value="Upload MP3" name="submit">
             </p>
         </form>
         </div>
