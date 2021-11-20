@@ -19,50 +19,55 @@
 
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav mr-auto">
-        <li class="nav-item active">
-            <a class="nav-link" href="index.php">Home <span class="sr-only">(current)</span></a>
+        <li class="nav-item">
+            <a class="nav-link" href="index.php">Home</a>
         </li>
         <li class="nav-item">
             <a class="nav-link" href="about.php">About</a>
         </li>
-        <li class="nav-item">
-            <a class="nav-link" href="queue.php">Queue</a>
+        <li class="nav-item active">
+            <a class="nav-link" href="queue.php">Queue <span class="sr-only">(current)</span></a>
         </li>
         <li class="nav-item">
             <a class="nav-link" href="https://github.com/conorm110/AstroTalk">GitHub</a>
         </li>
     </div>
     </nav>
-    <img src="img/banner.png" width="100%"/>
-    <div class="jumbotron jumbotron-fluid">
-        <div class="container">
-            <hr/>
-            <h1 class="display-4">Welcome to AstroTalk</h1>
-            <p class="lead">
-            AstroTalk allows you to leave voicemails with your alien friends thousands of lightyears
-            away (as long as you are ok with your message taking thousands of years to send). We believe that trying 
-            to communicate with the extraterrestrial shouldn't just be a fancypants scientist thing. 
-            At astrotalk.tk, you can send out your own personal audio clips for ET. 
-            </p>
-            <p class="lead">
-                <a class="btn btn-primary btn-lg" href="about.php" role="button">Learn more</a>
-            </p>
-            <br/>
-            <hr/>
-            <h1 class="display-4">Queue Your Audio</h1>
-            <p class="lead">
-            Anyone is able to queue whatever audio they would like. Not only the scientists and
-            world leaders can have their voices in space. Why not send your voice out today?
-            </p>
-            <p class="lead">
-                <a class="btn btn-primary btn-lg" href="queue.php" role="button">Get Started</a>
-            </p>
-        </div>
-    </div>
 
+    <div class="container-fluid">
+        <form action="upload.php" method="post" enctype="multipart/form-data">
+            <input type="file" name="fileToUpload" id="fileToUpload"><br>
+            <input type="submit" value="Upload Image" name="submit">
+        </form>
+        <hr/>
+        <table class="table">
+            <thead>
+                <tr>
+                    <th scope="col">#</th>
+                    <th scope="col">Name</th>
+                    <th scope="col">Download</th>
+                </tr>
+            </thead>
+            <tbody>
+                    <?php
+                    $fileList = glob('data/audiofiles/*.mp3');
+                    $loc = 0;
+                    foreach($fileList as $filename){
+                        if(is_file($filename)){
+                            $loc = $loc + 1;
+                            $path = $filename;
+                            $filename = str_replace("data/audiofiles/", "", $filename);
 
+                            echo "<tr><th scope=\"row\">", $loc, "</th>";
+                            echo "<td>", $filename, "</td>";
+                            echo "<td><a href=", $path, ">Download MP3</a></td></tr>";
+                        }   
+                    }
+                    ?>
+                
+            </tbody>
+        </table>
     </div>
-    
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>

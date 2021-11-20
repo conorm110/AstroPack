@@ -19,11 +19,11 @@
 
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav mr-auto">
-        <li class="nav-item active">
-            <a class="nav-link" href="index.php">Home <span class="sr-only">(current)</span></a>
-        </li>
         <li class="nav-item">
-            <a class="nav-link" href="about.php">About</a>
+            <a class="nav-link" href="index.php">Home</a>
+        </li>
+        <li class="nav-item active">
+            <a class="nav-link" href="about.php">About <span class="sr-only">(current)</span></a>
         </li>
         <li class="nav-item">
             <a class="nav-link" href="queue.php">Queue</a>
@@ -33,35 +33,7 @@
         </li>
     </div>
     </nav>
-    <img src="img/banner.png" width="100%"/>
-    <div class="jumbotron jumbotron-fluid">
-        <div class="container">
-            <hr/>
-            <h1 class="display-4">Welcome to AstroTalk</h1>
-            <p class="lead">
-            AstroTalk allows you to leave voicemails with your alien friends thousands of lightyears
-            away (as long as you are ok with your message taking thousands of years to send). We believe that trying 
-            to communicate with the extraterrestrial shouldn't just be a fancypants scientist thing. 
-            At astrotalk.tk, you can send out your own personal audio clips for ET. 
-            </p>
-            <p class="lead">
-                <a class="btn btn-primary btn-lg" href="about.php" role="button">Learn more</a>
-            </p>
-            <br/>
-            <hr/>
-            <h1 class="display-4">Queue Your Audio</h1>
-            <p class="lead">
-            Anyone is able to queue whatever audio they would like. Not only the scientists and
-            world leaders can have their voices in space. Why not send your voice out today?
-            </p>
-            <p class="lead">
-                <a class="btn btn-primary btn-lg" href="queue.php" role="button">Get Started</a>
-            </p>
-        </div>
-    </div>
 
-
-    </div>
     
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
