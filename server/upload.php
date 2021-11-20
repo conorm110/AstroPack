@@ -4,18 +4,22 @@ $target_file = $target_dir . basename($_FILES["fileToUpload"]["name"]);
 $uploadOk = 1;
 $imageFileType = strtolower(pathinfo($target_file,PATHINFO_EXTENSION));
 if (file_exists($target_file)) {
-  echo "File already exists";
+  echo "<script>alert(\"File Already Exists\");</script>";
+  header("Refresh:1; url=http://astrotalk.tk/queue.php");
   $uploadOk = 0;
 }
 if($imageFileType != "mp3") {
-  echo "MP3 is only accepted format";
+  echo "<script>alert(\"MP3 is the only excepted format\");</script>";
+  header("Refresh:1; url=http://astrotalk.tk/queue.php");
   $uploadOk = 0;
 }
 if ($uploadOk == 1) {
+  $target_file = str_replace(' ', '_', $target_file);
   if (move_uploaded_file($_FILES["fileToUpload"]["tmp_name"], $target_file)) {
-    echo "The file ". htmlspecialchars( basename( $_FILES["fileToUpload"]["name"])). " has been uploaded.";
+    echo "<script>alert(\"Successful Upload\");</script>";
+  header("Refresh:1; url=http://astrotalk.tk/queue.php");
   } else {
-    echo "Sorry, there was an error uploading your file.";
+    
   }
 }
 ?>
