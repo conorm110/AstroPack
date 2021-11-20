@@ -34,7 +34,7 @@
                     <a class="nav-link" href="tracking.php">Track <span class="sr-only">(current)</span></a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="https://github.com/conorm110/AstroTalk">GitHub</a>
+                    <a class="nav-link" href="https://github.com/conorm110/AstroTalk" target="_blank">GitHub</a>
                 </li>
         </div>
     </nav>
