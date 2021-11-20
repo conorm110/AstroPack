@@ -53,12 +53,18 @@
 
             </div>
         </div>
-        <h2> Conor </h2>
         <div class="container">
-            <h4>Professional among us player by day, coder by night, Conor spearheads this project with an innovative approach to astro radiology.</h4>
-        </div>
-        <h2> Jonah </h2>
-        <div class="container">
+            <div class="row">
+                <div class="col-sm-6">
+                    <img src="img/purple.png" width=50%>
+                    <p><b>Jonah (aka DonutJonut)</b> - A "Sussy" coding monke who likes to cut wires. There is never a challenge to difficult for this baka.</p>
+                </div>
+                <div class="col-sm-6">
+                    <img src="img/pink.png" width=50%>
+                    <p><b>Conor (aka mi1k)</b> - Professional among us player by day, coder by night, Conor spearheads this project with an innovative approach to astro radiology.</p>
+                    <p></p>
+                </div>
+            </div>
         </div>
     </div>
 </body>
