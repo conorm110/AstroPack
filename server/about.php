@@ -29,6 +29,9 @@
             <a class="nav-link" href="queue.php">Queue</a>
         </li>
         <li class="nav-item">
+            <a class="nav-link" href="tracking.php">Track <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item">
             <a class="nav-link" href="https://github.com/conorm110/AstroTalk">GitHub</a>
         </li>
     </div>

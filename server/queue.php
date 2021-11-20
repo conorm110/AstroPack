@@ -29,6 +29,9 @@
             <a class="nav-link" href="queue.php">Queue <span class="sr-only">(current)</span></a>
         </li>
         <li class="nav-item">
+            <a class="nav-link" href="tracking.php">Track </a>
+        </li>
+        <li class="nav-item">
             <a class="nav-link" href="https://github.com/conorm110/AstroTalk">GitHub</a>
         </li>
     </div>
@@ -39,11 +42,22 @@
     <div class="jumbotron jumbotron-fluid">
         <div class="container">
             <h1 class="display-4">Queue Your Audio</h1>
-            
-
             <p class="lead">
-            Anyone is able to queue whatever audio they would like. Not only the scientists and world leaders can have their voices in space. Why not send your voice out today?
-        </p>
+                <h3>Next AstroTalk Broadcast</h3>
+                <?php
+                    $json = file_get_contents('data/tracking.json');
+                    $decoded_json = json_decode($json, true);
+                    $next = $decoded_json['next'];
+                    $nextid = $next['id'];
+                    $nextloc = $next['loc'];
+                    $nextdist = $next['dist'];
+                    $nextdate = $next['date'];
+
+                    echo "Tracking ID: " . $nextid;
+                    echo "<br>Destination: " . $nextloc . " (" . $nextdist . " ly away)";
+                    echo "<br>Broadcast (GMT): " . $nextdate;
+                ?>
+            </p>
         <p class="lead">
             <form action="upload.php" method="post" enctype="multipart/form-data">
             <input type="file" name="fileToUpload" id="fileToUpload">
