@@ -57,12 +57,12 @@
             <div class="row">
                 <div class="col-sm-6">
                     <img src="img/purple.png" width=50%>
-                    <p><b>Jonah (aka DonutJonut)</b> - A "Sussy" coding monke who likes to cut wires. There is never a challenge to difficult for this baka.</p>
+                    <p><b>Jonah (aka donutjonut)</b> - A "sussy" coding monke who likes to cut wires. There is never a challenge to difficult for this baka.</p>
                 </div>
                 <div class="col-sm-6">
                     <img src="img/pink.png" width=50%>
                     <p><b>Conor (aka mi1k)</b> - Professional among us player by day, coder by night, Conor spearheads this project with an innovative approach to astro radiology.</p>
-                    <p></p>
+                    <p></p> <!-- pp -->
                 </div>
             </div>
         </div>
