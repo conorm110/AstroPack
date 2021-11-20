@@ -45,12 +45,22 @@
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-    <p> among us uwu </p>
-    </br>
-    <b>
-        <p> uwu among us cope! </p>
-    </b>
 
+    <div class="container-fluid">
+        <div class="jumbotron jumbotron-fluid">
+            <div class="container">
+                <h1 class="display-4">About The Team</h1>
+
+            </div>
+        </div>
+        <h2> Conor </h2>
+        <div class="container">
+            <h4>Professional among us player by day, coder by night, Conor spearheads this project with an innovative approach to astro radiology.</h4>
+        </div>
+        <h2> Jonah </h2>
+        <div class="container">
+        </div>
+    </div>
 </body>
 
 </html>
