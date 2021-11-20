@@ -35,10 +35,24 @@
     </nav>
 
     <div class="container-fluid">
-        <form action="upload.php" method="post" enctype="multipart/form-data">
-            <input type="file" name="fileToUpload" id="fileToUpload"><br>
-            <input type="submit" value="Upload Image" name="submit">
+
+    <div class="jumbotron jumbotron-fluid">
+        <div class="container">
+            <h1 class="display-4">Queue Your Audio</h1>
+            
+
+            <p class="lead">
+            Anyone is able to queue whatever audio they would like. Not only the scientists and world leaders can have their voices in space. Why not send your voice out today?
+        </p>
+        <p class="lead">
+            <form action="upload.php" method="post" enctype="multipart/form-data">
+            <input type="file" name="fileToUpload" id="fileToUpload">
+            <input  type="submit" value="Upload Image" name="submit">
+            </p>
         </form>
+        </div>
+    </div>
+        
         <hr/>
         <table class="table">
             <thead>
