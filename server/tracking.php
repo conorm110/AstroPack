@@ -59,8 +59,8 @@
                         <tr>
                         <th scope="col">#</th>
                         <th scope="col">Location</th>
-                        <th scope="col">Distance</th>
-                        <th scope="col">Time</th>
+                        <th scope="col">Distance (Lightyears)</th>
+                        <th scope="col">Time CST/CDT</th>
                         </tr>
                     </thead>
                     <tbody>
@@ -74,7 +74,7 @@
                                 echo "<td>" . strval($idnum) . "</td>";
                                 echo "<td>" . $tracking[strval($idnum)]['loc'] . "</td>";
                                 echo "<td>" . $tracking[strval($idnum)]['dist'] . "</td>";
-                                echo "<td>" . $tracking[strval($idnum)]['date'] . " GMT</td>";
+                                echo "<td>" . $tracking[strval($idnum)]['date'] . "</td>";
                                 echo "</tr>";
                                 $idnum++;
                             }
